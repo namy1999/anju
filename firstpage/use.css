@@ -1,0 +1,124 @@
+
+*
+{margin: 0;
+  padding: 0;
+}
+  body {
+    background-color: #fff;
+    color: #777;
+    font-family: : normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+a:hover {
+    color: #02b8d;
+}
+.wrapper {
+    margin: 100px auto;
+    padding: 0 10px;
+    width: 500px;
+    height:400px;
+    background-color: transparent;
+    position: relative;
+}
+header {
+    height: 120px;
+    background-color: black;
+}
+header h1 {
+    float: left;
+    font-size: 60px;
+    margin-left: 200px;
+    margin-top: 32px;
+}
+header h1 .color {
+    color: #02b8dd;
+}
+header nav {
+    float: right;
+    margin-right: 100px;
+}
+header nav ul li {
+    float:left;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+    height: 30px;
+    border: 1px solid gray;
+    margin-left: 20px;
+    background: linear-gradient(rgba(26,188,156,.3),rgba(231,70,56,.3)),black;
+    display: inline-block;
+    margin-top: 50px;
+}
+header nav ul li a {
+    color:white;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+
+#bgimage {
+  margin: 0px;
+  padding: 1px;
+  position: relative;
+  height: 600px;
+  background: /* linear-gradient(rgba(26,188,186,0.7),rgba(241,86,60,.5)),*/ url("bg.jpg") no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.wrapper h1 {
+  font-family:Arial;
+  font-weight: bold;
+  color: #003333;
+  font-size: 45px;
+  position: absolute;
+  text-align:center;
+  margin-top: 100px;
+}
+.button-1  {
+    display: block;
+    text-align: center;
+    background: green;
+    border-radius: 30px;
+    color: #fff;
+    width: 180px;
+    position: relative;
+    top:250px;
+    left:30%;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.button-1 :hover {
+    background-color: gray;
+    color: #fff;
+}
+footer {
+    padding: 20px 0;
+    background-color: black;
+    height: 50px;;
+}
+#footer-info {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button {
+    background-color: transparent; /* Green */
+    border:1px solid green;
+    color: white;
+    margin-right: 100px;
+    margin-top: 30px;
+    float:right;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="animate.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("top3.jpg");
+  background-size: 100% 100%;
+
+}
+p{
+
+    font-size: 22px;
+    color: #ff0066;
+  }
+/* Style the header */
+.header {
+    background-color:transparent;
+    padding: 10px;
+    height: 15vh;
+    text-align: center;
+}
+.header h1{
+  text-align: left;
+  font-size: 3vw;
+  font-weight: bolder;
+  animation-duration: 5s;
+}
+.image{
+  background-image: url("marek-szturc-788554-unsplash.jpg");
+  background-size:cover;
+  background-position:left;
+  height: 35vh;
+}
+.img{
+  background-image: url("pro.png");
+  height: 14vh;
+  background-color: black;
+  width: 6.5vw;
+  margin-left: 40%;
+
+}
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color:transparent;
+    height: 10vh;
+    background: linear-gradient(rgba(120,0,0,.5),rgba(0,0,0,.5));
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    margin-left:  5%;
+    margin-top: 2%;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    color: yellow;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+
+    float: left;
+  margin: 2%;
+    padding: 10px;
+
+}
+
+/* Left and right column */
+.column.side {
+    width: 23%;
+    margin-left: 0;
+    height: 110vh;
+border: 1px solid black;
+}
+
+/* Middle column */
+.column.middle {
+    width: 70%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 110vh;
+}
+.left{
+  border: 1px solid black;
+  border-right: 4px solid green;;
+  float: left;
+  background-color: black;
+  width: 38%;
+  margin-left: 2%;
+  margin-top: 5%;
+  height:96vh;
+}
+.wrapper{
+  height:96vh;
+  margin-top: 5%;
+  background-image: url("soil.jpg");
+  background-size: cover;
+  border: 1px solid black;
+  width: 58%;
+  float: left;
+  padding: 40px;
+}
+.child{
+  width:20vw;
+  height:40px;
+  animation-duration: 7s;
+  margin: 20px auto;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  font-family: fantasy;
+  border-bottom:5px solid white;
+  text-align: right;
+}
+#one{
+  background-color: transparent;
+  }
+#two{
+  background-color: transparent;
+}
+#three{
+  background-color: transparent;
+}
+#four{
+  background-color: transparent;
+}
+
+#five{
+  background-color: transparent;
+}
+#six{
+  background-color: transparent;
+}
+
+.glow {
+  font-size:3vw;
+  color:black;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+     text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+form.search input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    border-top-left-radius: 5px;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.search button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+}
+
+form.search button:hover {
+    background: #0b7dda;
+}
+
+form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.left p{
+  color: green;
+  text-align: center;
+  font-size: 3vw;
+  margin-top: 30%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+span{
+  color: white;
+  font-size: 17px;
+}
+/* Style the footer */
+.footer {
+    background-color:black;
+    padding: 10px;
+    color: gray;
+    font-size: 20px;
+    height: 7vh;
+
+    text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="image">
+<div class="header">
+  <h1 class="move animated flash infinite" >SMART IRRIGATION SYSTEM</h1>
+  </div>
+
+<div class="topnav">
+  <a href="#">HOME</a>
+  <a href="#">INSTALLATION</a>
+  <a href="#">PREVIOUS</a>
+</div>
+</div>
+<div class="row">
+  <div class="column middle">
+    <div class="left">
+      <h2 class="glow">User Profile</h2>
+      <p>Here you <br> can get <br> the current details <br> about your crops <br> and field.</p>
+
+
+    </div>
+    <div class="wrapper">
+      <div class="img"></div>
+        <div id="one"class="child animated fadeInUp infinite">
+       </div>
+        <div id="two"class="child animated fadeInUp infinite">
+        </div>
+        <div id="three"class="child  animated fadeInUp infinite">
+        </div>
+        <div id="four"class="child animated fadeInUp infinite">
+        </div>
+        <div id="five"class="child  animated fadeInUp infinite">
+        </div>
+        <div id="six"class="child animated fadeInUp infinite">
+        </div>
+    </div>
+      </div>
+  <div class="column side">
+    <h2>Crop Health</h2>
+    <form class="search" action="" style="margin:auto;max-width:300px">
+  <input type="text" placeholder="Search.." name="search2">
+  <button type="submit"  >click </button>
+</form>
+
+    <p>Factors that affect the distribution of agriculture</p>
+    <p>Temperature: </p><span>Most plants cannot grow if the temperature falls below 6°C or the soil is frozen for five consecutive months.  </span>
+    <p>Slope:</p> <span>The angle of slope will affect the type, depth and moisture content of soil. </span>
+    <p>Rainfall:</p> <span>Water is obviously a key factor in plant growth. </span>
+    <p>Wind:</p><span>Wind can have a destructive effect on crops.</span>
+   <p>Soil:</p> <span>Soil type will influence crop cultivation because different crops prefer different soils.</span>
+      </div>
+</div>
+
+<div class="footer">@smart irrigation system
+</div>
+
+</body>
+</html>
